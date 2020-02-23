@@ -12,15 +12,14 @@
 - Brief explanation of our network and results display
 	- The network is in an end-to-end mode, improved for restoring severely degraded images
 	- Our network has a significant advantage over other networks in severely degraded underwater pictures, and also performs well in slightly degraded underwater pictures
-	- ![severe](https://i.imgur.com/l5AwVxy.jpg)
-	- ![m](https://i.imgur.com/8TuV8Mh.jpg)
-	- ![](https://i.imgur.com/U3PBuor.jpg)
+	- ![severe](https://github.com/ChenD17/Results-on-End-to-end-Underwater-Images-Restoration-Network/blob/master/real3.jpg)
+	- ![me](https://github.com/ChenD17/Results-on-End-to-end-Underwater-Images-Restoration-Network/blob/master/real2.jpg)
+	- ![light](https://github.com/ChenD17/Results-on-End-to-end-Underwater-Images-Restoration-Network/blob/master/real1.jpg)
 	- **The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other existing methods.**
 	- We divided the real underwater pictures into three groups according to the degree of degradation. 
 	- It can be seen that in the case of severe water degradation, the other methods may have incomplete processing, which will cause images to still appear in degraded states, or the over-processing phenomenon which will cause the color of some areas to be too bright.
 	- The processed images of our method can better solve the problem of color cast and restore clear images. And the processed pictures have natural colors.
 	- ![ca](https://github.com/ChenD17/Results-on-End-to-end-Underwater-Images-Restoration-Network/blob/master/canny.jpg)
-	- ![canny](https://i.imgur.com/x1yiQ7s.jpg)
 	- **The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other methods.**
 	- In addition, we performed a simple edge detection test based on the canny operator. 
 	- The canny operator is provided by the opencv library. Set parameters to enable it to detect important contours without detecting abnormal noise.
