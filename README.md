@@ -1,1 +1,24 @@
 # Results-on-End-to-end-Underwater-Images-Restoration-Network
+----
+- Introduction
+	- captured underwater images are generally degraded by scattering and absorption. 
+	- Scattering means a change of direction of light after collision with suspended particles in water, which causes the blurring and low contrast of images. 
+	- Absorption means light absorbed by suspended particles which depends on the wavelength of each light beam. The light with shorter wavelength (i.e., green and blue light) travels longer in water. As a result, underwater images generally have predominantly green-blue hue. Contrast loss and color deviation are the main consequences of underwater degradation processes, which may cause difficulties for further processing, and it is of considerable interest to remove such distortions. 
+	- The goal of underwater image processing is to enhance visibility and rectify the color deviation. 
+- Deficiencies of existing methods
+	- Underwater pictures before and after severe degradation are vastly different, posing challenges for subsequent visual tasks. However, the existing methods perform poorly on the recovery of such pictures.
+	- Due to the inevitable error superposition of the physical model-based restoration network, the effect of color cast cannot be removed well when recovering severely degraded underwater images.
+	- Existing end-to-end models are also difficult to learn the mapping relationship before and after severely degraded pictures
+- Brief explanation of our network and results display
+	- The network is in an end-to-end mode, improved for restoring severely degraded images
+	- Our network has a significant advantage over other networks in severely degraded underwater pictures, and also performs well in slightly degraded underwater pictures
+	- ![severe](https://i.imgur.com/l5AwVxy.jpg)
+	- ![m](https://i.imgur.com/8TuV8Mh.jpg)
+	- ![](https://i.imgur.com/U3PBuor.jpg)
+	- We divided the real underwater pictures into three groups according to the degree of degradation. The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other existing methods.
+	- It can be seen that in the case of severe water degradation, the other methods may have incomplete processing, which will cause images to still appear in degraded states, or the over-processing phenomenon which will cause the color of some areas to be too bright.
+	- The processed images of our method can better solve the problem of color cast and restore clear images. And the processed pictures have natural colors.
+	- ![canny](https://i.imgur.com/x1yiQ7s.jpg)
+	- In addition, we performed a simple edge detection test based on the canny operator. The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other methods.
+	- The canny operator is provided by the opencv library. Set parameters to enable it to detect important contours without detecting abnormal noise.
+	- Compared with other methods, the pictures processed by this method can detect the important contour information of the image without introducing additional wrong contour information, which is a significant improvement over the input.
