@@ -15,10 +15,12 @@
 	- ![severe](https://i.imgur.com/l5AwVxy.jpg)
 	- ![m](https://i.imgur.com/8TuV8Mh.jpg)
 	- ![](https://i.imgur.com/U3PBuor.jpg)
-	- We divided the real underwater pictures into three groups according to the degree of degradation. The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other existing methods.
+	- **The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other existing methods.**
+	- We divided the real underwater pictures into three groups according to the degree of degradation. 
 	- It can be seen that in the case of severe water degradation, the other methods may have incomplete processing, which will cause images to still appear in degraded states, or the over-processing phenomenon which will cause the color of some areas to be too bright.
 	- The processed images of our method can better solve the problem of color cast and restore clear images. And the processed pictures have natural colors.
 	- ![canny](https://i.imgur.com/x1yiQ7s.jpg)
-	- In addition, we performed a simple edge detection test based on the canny operator. The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other methods.
+	- **The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other methods.**
+	- In addition, we performed a simple edge detection test based on the canny operator. 
 	- The canny operator is provided by the opencv library. Set parameters to enable it to detect important contours without detecting abnormal noise.
 	- Compared with other methods, the pictures processed by this method can detect the important contour information of the image without introducing additional wrong contour information, which is a significant improvement over the input.
