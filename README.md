@@ -19,6 +19,7 @@
 	- We divided the real underwater pictures into three groups according to the degree of degradation. 
 	- It can be seen that in the case of severe water degradation, the other methods may have incomplete processing, which will cause images to still appear in degraded states, or the over-processing phenomenon which will cause the color of some areas to be too bright.
 	- The processed images of our method can better solve the problem of color cast and restore clear images. And the processed pictures have natural colors.
+	- ![ca](https://github.com/ChenD17/Results-on-End-to-end-Underwater-Images-Restoration-Network/blob/master/canny.jpg)
 	- ![canny](https://i.imgur.com/x1yiQ7s.jpg)
 	- **The first column contains the inputs, the last column contains the images processed by our method, and the other columns contain the images processed by other methods.**
 	- In addition, we performed a simple edge detection test based on the canny operator. 
